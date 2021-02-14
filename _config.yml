@@ -97,8 +97,8 @@ author:
   name             : "오늘의주식"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : ""
-  location         : "대한민국, "
-  email            :
+  location         : "대한민국, 서울"
+  email            : "slowmotion.ant@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"

@@ -1,28 +1,155 @@
-<!DOCTYPE html>
-<html>
-        <head>
-                <title>Hello</title>
-        </head>
-        <body>
-                <nav>
-                <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/cv">CV</a></li>
-                        <li><a href="/blog">Blog</a></li>
-                </ul>
-                </nav>
-                <div class="container">
-                <div class="blurb">
-                        <h1>Hi there, You don't have application yet</h1>
-                                <p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-                </div><!-- /.blurb -->
-                </div><!-- /.container -->
-                <footer>
-                <ul>
-                        <li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-                        <li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-                        </ul>
-                </footer>
-        </body>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href=./static/favicon.oju.ico type="image/x-icon">
+  <title>
+    오늘의주식
+  </title>
+  <meta name="title" content="오늘의주식" />
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="oju" />
+  <meta property="og:title" content="oju: social network for your investment" />
+  <meta property="og:url" content="https://slowmotionant.github.io/oju.html" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+  <style>
+
+    body { 
+      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #333;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .site-wrapper {
+      display: table;
+      width: 100%;
+      height: 100%;
+      min-height: 100%;
+      -webkit-box-shadow: inset 0 0 100px rgb(0 0 0 / 50%);
+      box-shadow: inset 0 0 100px rgb(0 0 0 / 50%);
+    }
+
+    .site-wrapper-inner {
+        vertical-align: middle;
+        display: table-cell;
+    }
+
+    .masthead, .mastfoot, .cover-container {
+      width: 700px;      
+    }
+
+    .cover-container {
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .masthead {
+      position: fixed;
+      top: 0;
+    } 
+
+    .inner {
+      padding: 30px;
+    }
+
+    .inner-image {
+      float: left;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .masthead-brand {
+      text-align: left;
+      margin-left: 50px;
+      color: rgb(125, 206, 200);
+    }
+
+    .lead {
+      font-size: 21px;
+      margin-bottom: 20px;
+      font-weight: 300;
+      line-height: 1.4;
+    }
+
+    .mastfoot {
+      position: fixed;
+      bottom: 0;
+      color: #999;
+    }
+
+    .btn-icon-text {
+      width: 150px;
+      margin-right: 10px;
+    }
+
+    .fa, .fab {
+        margin-top: 4px;
+        float:left;
+        margin-right: 15px
+    }
+  </style>
+</head>
+
+<body>
+  <div class="site-wrapper">
+    <div class="site-wrapper-inner">
+      <div class="cover-container">
+        <div class="masthead clearfix">
+          <div class="inner">
+            <img class="inner-image" alt="wave" src="./static/oju_logo.PNG">
+            <h3 class="masthead-brand">오늘의 주식</h3>
+          </div>
+        </div>
+
+        <div class="inner cover">
+          <h1 class="cover-heading">오늘의 주식을 시작해 보세요.</h1>
+            <p class="lead">아직 오늘의 주식이 없으신가요? 친구들이 여러분을 기다리고 있습니다! 
+            </br>앱을 설치하고 바로 시작해 보세요!
+            
+            <div class="lead template-demo mt-2"> 
+              <button class="btn btn-outline-dark btn-icon-text" onclick="location.href='https://apps.apple.com/kr/app/%EC%98%A4%EB%8A%98%EC%9D%98%EC%A3%BC%EC%8B%9D-%EC%A3%BC%EC%8B%9D-sns/id1559405415';"> 
+                <i class="fab fa-apple btn-icon-prepend fa-2x"></i> 
+                <div class="d-inline-block text-left"> 
+                  <small class="font-weight-light d-block">Download on the</small>
+                  <div>App Store</div> 
+                </div> 
+              </button> 
+              <button class="btn btn-outline-dark btn-icon-text" onclick="alert('아직 준비 중 입니다.')"> 
+                <i class="fab fa-google-play btn-icon-prepend fa-2x"></i> 
+                <div class="d-inline-block text-left"> 
+                  <small class="font-weight-light d-block">Get it on the</small> 
+                  <div>Google Play</div>
+                </div> 
+              </button> 
+            </div>
+            
+        </div>
+
+        <div class="mastfoot">
+          <div class="inner">
+              <p>
+                By ©slowmotion. </br>
+                <a href="https://slowmotionant.github.io/jekyll/update/%EC%9D%B4%EC%9A%A9%EC%95%BD%EA%B4%80/">이용약관</a>
+                |
+                <a href="https://slowmotionant.github.io/jekyll/update/%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%ED%99%9C%EC%9A%A9%EB%8F%99%EC%9D%98/">개인정보처리방침</a>
+              </p>
+          </div>
+        </div>
+
+      </div>  
+    </div>
+  </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</body>
+
 </html>
